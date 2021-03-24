@@ -1,18 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-//#include "bubbleSort.h"
-//#include "selectSort.h"
+#include "bubbleSort.h"
 //#include "insertSort.h"
 //#include "quickSort.h"
 
 int n;
-
-void swap(int *a, int *b) {
-    int c = *a;
-    *a = *b;
-    *b = c;
-}
 
 void print(int a[]) {
     for (int i = 0; i < n; i++) {
@@ -24,7 +17,7 @@ void print(int a[]) {
 int main(void) {
     srand(time(NULL));
 
-    printf("Введите количество чисел в массиве и максимальное число: ");
+    printf("Max number and max element: ");
     int r;
     scanf("%d", &n);
     scanf("%d", &r);
@@ -38,11 +31,9 @@ int main(void) {
 
     print(a);
 
-    //bubble(a, n);              //Сортировка пузырьком
-    //selection(a, n);           //Сортировка выбором
-    //insert(a, n);              //Сортировка вставками
-    //quicksort(a, 0, n-1);      //Быстрая сортировка
-    /////////////////////////////////////////
+    bubble(a, n);     
+    //insert(a, n);       
+    //quicksort(a, 0, n-1);   
 
     print(a);
 
