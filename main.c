@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-//#include "bubbleSort.h"
+#include "bubbleSort.h"
 #include "insertSort.h"
 //#include "quickSort.h"
 
@@ -30,9 +30,9 @@ int main(void) {
     }
 
     print(a);
-
-    //bubble(a, n);     
-    insert(a, n);       
+  
+    insert(a, n); 
+    bubble(a, n); 
     //quicksort(a, 0, n-1);   
 
     print(a);
